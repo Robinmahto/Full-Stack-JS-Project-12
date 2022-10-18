@@ -144,10 +144,9 @@ body {
 }
 
 .section_two .sec_two {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .section_two .sec_two div {
@@ -411,5 +410,21 @@ hr {
   }
   .hero-right .hero-btn {
     width: 20rem;
+  }
+
+  /* section 2 */
+  .section_two .sec_one {
+    font-size: 1rem;
+  }
+
+  .section_two .sec_two {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .section_two .sec_forth {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.1;
   }
 }
