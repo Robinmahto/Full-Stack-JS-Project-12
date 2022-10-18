@@ -58,12 +58,10 @@ body {
 /* Hero Section */
 
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 90%;
   margin: 0 auto;
-  gap: 40px;
   padding: 2rem 4rem;
 }
 
@@ -80,30 +78,28 @@ body {
 }
 
 .hero-right {
-  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .hero-right h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   color: #fff;
 }
 
 .hero-right p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 
 .hero-right .hero-btn {
   background: #fff;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
 }
 
 .hero-right .hero-btn input {
@@ -340,4 +336,80 @@ footer .bottom .bottom-list li {
 hr {
   margin: 2rem 0;
   background-color: rgba(255, 255, 255, 0.093);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 1200px) {
+  /* hero section */
+  .hero-left .hero-img {
+    height: 20rem;
+  }
+
+  .hero-right h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-right p {
+    font-size: 1rem;
+  }
+
+  .hero-right .hero-btn {
+    padding: 0.5rem;
+  }
+
+  .hero-right .hero-btn button {
+    width: 8rem;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+
+  .hero-right .hero-btn input {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* hero section */
+  .hero-left .hero-img {
+    display: none;
+  }
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+  .hero-right h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .hero-right p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* navbar */
+  .navbar ul {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* hero section */
+  .hero-right h2 {
+    width: 20rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .hero-right p {
+    font-size: 0.8rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  .hero-right .hero-btn {
+    width: 20rem;
+  }
 }
