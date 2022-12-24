@@ -1,6 +1,6 @@
-# Assignment - 12
+# Bussiness-Landing-Page
 
-## Project 12 [Live Link](https://full-stack-js-projects-12.netlify.app/)
+## Project 12 [Live Link](https://bussiness-landing-pages-12.netlify.app/)
 
 - ### skills used in project
   - Learn CSS Grid, media query, flexbox etc.
